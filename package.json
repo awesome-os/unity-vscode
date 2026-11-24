@@ -48,11 +48,19 @@
     "taskDefinitions": [
       {
         "type": "unity-ghost",
-        "required": ["action"],
+        "required": [
+          "action"
+        ],
         "properties": {
           "action": {
             "type": "string",
-            "enum": ["hydrate", "build-scripts", "test-editmode", "test-playmode", "open-editor"]
+            "enum": [
+              "hydrate",
+              "build-scripts",
+              "test-editmode",
+              "test-playmode",
+              "open-editor"
+            ]
           },
           "projectPath": {
             "type": "string"
@@ -64,5 +72,6 @@
         }
       }
     ]
-  }
+  },
+  "repository": "https://github.com/awesome-os/unity-vscode.git"
 }
