@@ -42,3 +42,15 @@ Unity's C++ core is proprietary/source-available (we never redistribute Unity bi
 ```powershell
 node --test test/unity-vscode.test.mts
 ```
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```powershell
+# Windows (PowerShell) — 1-line VSIX install into Code - OSS / VS Code
+gh release download -R awesome-os/unity-vscode -p "*.vsix" -O "unity-vscode.vsix" --clobber; code --install-extension "unity-vscode.vsix"
+```
+
+```sh
+# Linux & macOS — 1-line VSIX install into Code - OSS / VS Code
+gh release download -R awesome-os/unity-vscode -p "*.vsix" -O "unity-vscode.vsix" --clobber && code --install-extension "unity-vscode.vsix"
+```
