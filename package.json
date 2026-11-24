@@ -1,0 +1,68 @@
+{
+  "name": "unity-ghost",
+  "displayName": "Awesome-OS Unity 6 Ghost Extension",
+  "version": "0.1.0",
+  "publisher": "awesome-os",
+  "license": "MIT",
+  "type": "module",
+  "description": "MIT Unity 6 extension for Awesome-OS Code - OSS & Eclipse Theia — zero-Visual-Studio C#/Roslyn builds via b8g-ghost cas-v1 (.NET 11 + ghost-llvm) and Unity Editor batchmode/test runner",
+  "engines": {
+    "vscode": "^1.85.0",
+    "node": ">=22.18.0"
+  },
+  "main": "./src/extension.mts",
+  "exports": {
+    ".": "./src/extension.mts"
+  },
+  "scripts": {
+    "test": "node --test test/unity-vscode.test.mts"
+  },
+  "activationEvents": [
+    "workspaceContains:ProjectSettings/ProjectVersion.txt",
+    "onLanguage:csharp",
+    "onCommand:unityGhost.hydrateToolchain"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "unityGhost.hydrateToolchain",
+        "title": "Unity Ghost: Hydrate .NET 11 + Ghost ABI Toolchain (cas-v1)"
+      },
+      {
+        "command": "unityGhost.buildScripts",
+        "title": "Unity Ghost: Build C# Assemblies via .NET 11 (Zero Visual Studio)"
+      },
+      {
+        "command": "unityGhost.openEditor",
+        "title": "Unity Ghost: Open Project in Unity Editor"
+      },
+      {
+        "command": "unityGhost.runTests",
+        "title": "Unity Ghost: Run EditMode / PlayMode Tests (Batchmode)"
+      },
+      {
+        "command": "unityGhost.inspectBurst",
+        "title": "Unity Ghost: Inspect Burst / IL2CPP Toolchain Plan"
+      }
+    ],
+    "taskDefinitions": [
+      {
+        "type": "unity-ghost",
+        "required": ["action"],
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": ["hydrate", "build-scripts", "test-editmode", "test-playmode", "open-editor"]
+          },
+          "projectPath": {
+            "type": "string"
+          },
+          "configuration": {
+            "type": "string",
+            "default": "Debug"
+          }
+        }
+      }
+    ]
+  }
+}

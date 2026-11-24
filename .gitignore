@@ -1,0 +1,5 @@
+node_modules/
+.b8g/
+dist/
+*.vsix
+*.log
