@@ -1,0 +1,40 @@
+{
+  "schema": "holo-compiler-lockfile-v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "repo": "awesome-os/unity-vscode",
+  "targets": [
+    "win64",
+    "linux-x64",
+    "linux-arm64",
+    "macos-arm64",
+    "wasm32-wasi"
+  ],
+  "generatedAt": "2026-11-24T23:53:02.473Z",
+  "dependencies": [
+    {
+      "id": "awesome-os/unity-vscode/SHA256SUMS.txt",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "any",
+      "sha512": "b1bbb79c9569a2092d6f63a79e528b11ed76a606072bec208f90d0ba724d1192e3471bb1372801e7813adefa3c7232bb3cbbee84571cf2289a67d88609170832",
+      "size": 89,
+      "executable": false,
+      "blob": "v11/files/b1/b1bbb79c9569a2092d6f63a79e528b11ed76a606072bec208f90d0ba724d1192e3471bb1372801e7813adefa3c7232bb3cbbee84571cf2289a67d88609170832",
+      "url": "https://github.com/awesome-os/unity-vscode/releases/download/v0.1.0/SHA256SUMS.txt",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/unity-vscode/unity-ghost-0.1.0.vsix",
+      "kind": "vsix",
+      "version": "v0.1.0",
+      "target": "any",
+      "sha512": "f88185300d17164e7df1bf33e06bcb02f410e5186eb2f2d57b0471fe914284e44d74200f7b07f6766d0d3b7dc982603ba520c90021f37c6ca61cc5e75a1849a4",
+      "size": 9657,
+      "executable": false,
+      "blob": "v11/files/f8/f88185300d17164e7df1bf33e06bcb02f410e5186eb2f2d57b0471fe914284e44d74200f7b07f6766d0d3b7dc982603ba520c90021f37c6ca61cc5e75a1849a4",
+      "url": "https://github.com/awesome-os/unity-vscode/releases/download/v0.1.0/unity-ghost-0.1.0.vsix",
+      "dependencies": []
+    }
+  ]
+}
