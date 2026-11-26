@@ -1,3 +1,5 @@
+> [!NOTE] Consolidated into https://github.com/awesome-os/devtools
+
 # `awesome-os/unity-vscode` (`unity-ghost`)
 
 > **MIT Unity 6 extension for Awesome-OS Code - OSS & Eclipse Theia — zero-Visual-Studio C#/Roslyn builds via `awesome-os/b8g-ghost @ cas-v1` (`.NET 11` + `b8g-ghost-abi` + `libsectium_display`) and Unity Editor batchmode/test runner.**
